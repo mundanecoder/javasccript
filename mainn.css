@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  inset: 0;
+  font-size: 62.5%;
+}
+
+nav {
+  display: flex;
+}
+nav .nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(46, 46, 122, 0.4);
+  width: 100vw;
+  height: 5vh;
+  z-index: 9999;
+  text-decoration: none;
+}
+nav .nav_container .item {
+  font-size: 3rem;
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+}
+nav .nav_container .item_mark {
+  text-decoration: underline;
+  border: 0.2rem solid rgb(61, 132, 28);
+  background-color: rgb(51, 51, 56);
+}
+nav .sticky {
+  background-color: rgba(8, 31, 1, 0.5);
+  top: 0;
+  height: 4rem;
+  z-index: 999999;
+  position: fixed;
+}
+
+.card_container {
+  padding: 0.2rem;
+  display: grid;
+  grid-template-rows: 16vw 62vw 16vw;
+}
+.card_container .c1 {
+  width: 20vw;
+  height: 60vh;
+  background-color: black;
+}
+.card_container .card {
+  border: 0.25rem solid rgb(160, 160, 14);
+  height: 100vh;
+  width: 62vw;
+  font-size: 7rem;
+  border-radius: 0.25rem;
+  transform: translateY(10rem);
+  opacity: 0;
+  transition: 150ms;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.card_container .show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card_container #home {
+  background: rgb(102, 192, 102);
+}
+.card_container #contact {
+  background: rgb(255, 255, 5);
+}
+.card_container #help {
+  background: rgb(129, 189, 238);
+}
+.card_container #blog {
+  background: rgb(223, 80, 14);
+}
+
+/*# sourceMappingURL=mainn.css.map */
