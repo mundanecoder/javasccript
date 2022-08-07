@@ -5,10 +5,10 @@
 }
 
 body {
-  background-image: url(img/back.jpg);
+  background-image: linear-gradient(rgba(101, 84, 84, 0.3), rgba(226, 184, 191, 0.3)), url(/img/backbg.jpg);
   background-attachment: fixed;
   background-position: center;
-  background-size: center;
+  background-size: cover;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav .nav_container .item_mark {
   height: 4vh;
 }
 nav .sticky {
-  background-color: rgb(235, 185, 185);
+  background-color: rgba(159, 101, 101, 0.7);
   height: 8vh;
   top: 0;
   z-index: 999999;
@@ -93,19 +93,21 @@ nav .sticky .nav_container {
   padding: 2vh;
 }
 .card_container .c1 .c11 P {
-  font-size: 1.5vh;
+  font-size: 1.3vh;
+  font-weight: bold;
   color: rgb(8, 9, 8);
   font-style: italic;
 }
 .card_container .c1 .c12 {
   width: 14vw;
   height: 29vh;
-  background-color: rgba(242, 214, 183, 0.7);
+  background-color: rgba(172, 109, 37, 0.7);
   display: grid;
   padding: 2vh;
 }
 .card_container .c1 .c12 P {
   font-size: 1.5vh;
+  font-weight: bold;
   font-style: italic;
 }
 .card_container .c2 {
@@ -117,8 +119,12 @@ nav .sticky .nav_container {
   background-color: transparent;
   padding: 0.5vh;
 }
+.card_container .c2 P {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
 .card_container .c2 .box5 {
-  background-image: url(/img/casual.svg);
+  background-image: linear-gradient(rgba(177, 167, 167, 0.7), rgba(182, 127, 136, 0.3)), url(/img/casual.svg);
   background-position: center center;
   background-size: 13vw 10vh;
 }
@@ -176,27 +182,53 @@ nav .sticky .nav_container {
   background: rgb(255, 255, 255);
   font-size: 3vh;
   background-image: url(/img/group.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   opacity: 0.9;
 }
 .card_container #contact {
   background: rgba(190, 190, 173, 0.7);
   font-size: 3vh;
-  background-image: url(/img/female.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.9;
 }
+.card_container #contact .cl1 {
+  width: 30vw;
+  height: 90vh;
+  background-image: url(/img/WOMENF.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card_container #contact .cl2 {
+  width: 30vw;
+  height: 90vh;
+  background-image: url(/img/wf.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
 .card_container #help {
   background: rgba(197, 197, 173, 0.7);
   font-size: 3vh;
-  background-image: url(/img/men.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: rgba(141, 177, 167, 0.7);
+  background-size: cover;
   background-position: center;
   opacity: 0.9;
+}
+.card_container #help .hl1 {
+  width: 30vw;
+  height: 80vh;
+  background-image: url(/img/MENF.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_container #help .hl2 {
+  width: 30vw;
+  height: 80vh;
+  background-image: url(/img/men.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .card_container #blog {
   background: rgb(223, 80, 14);
@@ -214,12 +246,12 @@ nav .sticky .nav_container {
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  background-color: rgba(195, 195, 90, 0.6);
+  background-color: rgba(19, 20, 66, 0.6);
   object-fit: cover;
 }
 .footer_box .h1 {
   font-size: 1.5vh;
-  color: rgb(47, 0, 255);
+  color: rgb(156, 169, 168);
 }
 .footer_box span {
   font-size: 1.5vh;

@@ -5,10 +5,10 @@
     
 }
 body{
-    background-image:url(img/back.jpg);
+    background-image:(linear-gradient(rgba(101, 84, 84, 0.3),rgba(226, 184, 191, 0.3)),url(/img/backbg.jpg));
     background-attachment: fixed;
     background-position: center;
-    background-size: center;
+    background-size: cover;
 }
 
 nav{
@@ -67,7 +67,7 @@ nav{
     }
     .sticky{
         // position: fixed;
-        background-color: rgb(235, 185, 185);
+        background-color: rgba(159, 101, 101,0.7);
         height: 8vh;
         top: 0;
         // height: 4rem;
@@ -100,6 +100,7 @@ nav{
     grid-template-columns: 16vw 62vw 16vw;
     justify-content: space-between;
 
+
     // gap: 1.4rem;
     // align-items:center ;
 
@@ -114,6 +115,7 @@ nav{
         height: 60vh;
         background-color:transparent;
         position: sticky;
+        // opacity: 0.6;
         // justify-content: center;
         // padding-top:1vh;
         // gap: 1vw;
@@ -123,13 +125,15 @@ nav{
             width: 14vw;
             height: 29vh;
             background-color: rgba(181, 222, 152,0.7);
+            // opacity: 0.4;
             
             display: grid;
             // justify-content: center;
             // align-items: center;
             padding: 2vh;
             P{
-                font-size: 1.5vh;
+                font-size: 1.3vh;
+                font-weight: bold;
                 color: rgb(8, 9, 8);
                 font-style: italic;
             }
@@ -138,13 +142,15 @@ nav{
             // margin: 1vh;
             width: 14vw;
             height:29vh;
-            background-color: rgba(242, 214, 183,0.7);
+            background-color: rgba(172, 109, 37, 0.7);
             display: grid;
             padding: 2vh;
+            // opacity: 0.6;
             // justify-content: center;
             // align-items: center;
             P{
                 font-size: 1.5vh;
+                font-weight: bold;
                 font-style: italic;
             }
         
@@ -167,8 +173,13 @@ nav{
         // justify-content: center;
         // display: flex;
         padding: 0.5vh;
+        P{
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
         .box5{
-            background-image: url(/img/casual.svg);
+            background-image:(linear-gradient(rgba(177, 167, 167, 0.7),rgba(182, 127, 136, 0.3)),url(/img/casual.svg));
             background-position: center center;
             background-size: 13vw 10vh;
 
@@ -239,30 +250,67 @@ nav{
         background: rgb(255, 255, 255);
         font-size: 3vh;
         background-image: url(/img/group.jpg);
-        background-position: center;
+        background-position: center center;
         background-size: cover;
         opacity: 0.9;
     }
     #contact{
         background:rgba(190, 190, 173, 0.7);
         font-size: 3vh;
-        background-image: url(/img/female.jpg);
         // background-size: cover;
         background-size: contain;
         background-repeat: no-repeat;
    
         background-position: center;
         opacity: 0.9;
+
+        .cl1{
+            width: 30vw;
+            height:90vh;
+            background-image: url(/img/WOMENF.jpg);
+        
+            background-position: center;
+            background-size: cover;
+
+        }
+        .cl2{
+            width: 30vw;
+            height:90vh;
+            background-image: url(/img/wf.jpg);
+            background-position:bottom;
+            background-size: cover;
+            // background-repeat: no-repeat;
+        }
+
     }
     #help{
         background:rgba(197, 197, 173, 0.7);
         font-size: 3vh;
-        background-image: url(/img/men.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-color: rgba(141, 177, 167, 0.7);
+        // background-image: url(/img/MENF.jpg);
+        background-size: cover;
+        // background-repeat: no-repeat;
         background-position: center;
-        
         opacity: 0.9;
+
+        .hl1{
+            width: 30vw;
+            height:80vh;
+            background-image: url(/img/MENF.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+        .hl2{
+            width: 30vw;
+            height:80vh;
+            background-image: url(/img/men.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+        
+
     }
     #blog{
         background: rgb(223, 80, 14);
@@ -283,11 +331,11 @@ nav{
     // align-items: center;
     text-align: center;
     // border: 0.4rem solid blue;
-    background-color: rgba(195, 195, 90,0.6);
+    background-color: rgba(19, 20, 66, 0.6);
     object-fit: cover;
     .h1{
         font-size: 1.5vh;
-        color: rgb(47, 0, 255);
+        color: rgb(156, 169, 168);
 
     }
     span{
