@@ -17,6 +17,21 @@ cards.forEach(card => {
 
     observer.observe(card)
 })
+////////////////////modal/////////////////////////
+window.addEventListener('load', ()=>{
+    const modal = document.querySelector('.bground')
+    console.log('hello')
+
+    // modal.style.display ='block';
+
+    const close = document.querySelector('.modal .close')
+    close.addEventListener('click', ()=>{
+
+        modal.style.display = 'none';
+    }
+    )
+
+})
 
 
 //////////////// sticky navbar////////////////////

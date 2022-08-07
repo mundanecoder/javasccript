@@ -78,20 +78,74 @@ nav{
         // justify-content: center;
         .logo{
             font-size: 4vh;
-            color: rgb(43, 9, 28);
+            color: rgb(233, 215, 225);
             display: block;
         }
         .nav_container{
             height: 8vh;
             display: flex;
-            align-items: center;
-
-            
+            align-items: center;    
         }
         
     }
 
         
+}
+
+.bground{
+    inset: 0;
+    background-color: rgba(255, 228, 196,0.7);
+    z-index: 9999;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    // display: none;
+   
+    // opacity: 0.6;
+    // display: none;
+    .modal{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        height: 80vh;
+        width: 100vw;
+        // background-color: rgb(198, 66, 66);
+        background-image: url(/img/offers.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+
+        .close{
+            font-size: 6vw;
+            color: rgb(22, 20, 18);
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1.6vw;
+            margin-top: 1.6vw;
+
+            span{
+                cursor: pointer;
+                border-radius: 40%;
+                background-color: rgb(164, 128, 83);
+            }
+        }
+        .offers{
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons{
+            display: flex;
+            justify-content: flex-end;
+            margin:0 1.2vw;
+            padding: 0.5rem 0;
+            gap: 0.4rem;
+            
+        }
+    }
 }
 
 .card_container{
@@ -172,7 +226,7 @@ nav{
         // position: sticky;
         // justify-content: center;
         // display: flex;
-        padding: 0.5vh;
+        // padding: 0.5vh;
         P{
             color: rgb(255, 255, 255);
             font-weight: bolder;
@@ -240,6 +294,8 @@ nav{
         place-items: center;
         justify-content: center;
         // opacity: 0.9;
+
+
     }
     .show{
         transform: translateY(0);
@@ -315,15 +371,41 @@ nav{
     #blog{
         background: rgb(223, 80, 14);
         font-size: 3vh;
-        background-image: url(/img/home-decor.jpg);
+        // background-image: url(/img/decor/back1.jpg);
+        background-image:(linear-gradient(rgba(230, 141, 141, 0.7),rgba(140, 109, 115, 0.3)),url(/img/decor/back1.jpg));
         background-size: cover;
         background-position: center;
-        opacity: 0.9;}
+        opacity: 0.9;
+        .deco1{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            // justify-content: center;
+            // align-items: center;
+
+            
+            
+            .decor{
+                height: 30vh;
+                width: 25vw;
+                background-color: transparent;
+                // border: 0.2rem solid rgb(153, 153, 137);
+                gap:0.5vw ;
+
+                img{
+                    height: 28vh;
+                    width: 20vw;
+                    border: 0.2rem solid orange;
+                }
+            }
+        }
+    }
+
 
 }
 
 .footer_box{
-    height: 10vh;
+    height: 14vh;
     width: 98vw;
     display: flex;
     flex-direction: column;
@@ -342,5 +424,9 @@ nav{
         font-size: 1.5vh;
         padding: 0.15vh;
         color: rgb(0, 0, 0);
+        img{
+            height: 4vh;
+            
+        }
     }
 }

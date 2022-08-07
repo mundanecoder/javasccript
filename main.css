@@ -61,13 +61,59 @@ nav .sticky {
 }
 nav .sticky .logo {
   font-size: 4vh;
-  color: rgb(43, 9, 28);
+  color: rgb(233, 215, 225);
   display: block;
 }
 nav .sticky .nav_container {
   height: 8vh;
   display: flex;
   align-items: center;
+}
+
+.bground {
+  inset: 0;
+  background-color: rgba(255, 228, 196, 0.7);
+  z-index: 9999;
+  position: fixed;
+  display: grid;
+  place-items: center;
+}
+.bground .modal {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 100vw;
+  background-image: url(/img/offers.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+.bground .modal .close {
+  font-size: 6vw;
+  color: rgb(22, 20, 18);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.6vw;
+  margin-top: 1.6vw;
+}
+.bground .modal .close span {
+  cursor: pointer;
+  border-radius: 40%;
+  background-color: rgb(164, 128, 83);
+}
+.bground .modal .offers {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.bground .modal .buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1.2vw;
+  padding: 0.5rem 0;
+  gap: 0.4rem;
 }
 
 .card_container {
@@ -117,7 +163,6 @@ nav .sticky .nav_container {
   height: 60vh;
   position: sticky;
   background-color: transparent;
-  padding: 0.5vh;
 }
 .card_container .c2 P {
   color: rgb(255, 255, 255);
@@ -233,14 +278,30 @@ nav .sticky .nav_container {
 .card_container #blog {
   background: rgb(223, 80, 14);
   font-size: 3vh;
-  background-image: url(/img/home-decor.jpg);
+  background-image: linear-gradient(rgba(230, 141, 141, 0.7), rgba(140, 109, 115, 0.3)), url(/img/decor/back1.jpg);
   background-size: cover;
   background-position: center;
   opacity: 0.9;
 }
+.card_container #blog .deco1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card_container #blog .deco1 .decor {
+  height: 30vh;
+  width: 25vw;
+  background-color: transparent;
+  gap: 0.5vw;
+}
+.card_container #blog .deco1 .decor img {
+  height: 28vh;
+  width: 20vw;
+  border: 0.2rem solid orange;
+}
 
 .footer_box {
-  height: 10vh;
+  height: 14vh;
   width: 98vw;
   display: flex;
   flex-direction: column;
@@ -257,6 +318,9 @@ nav .sticky .nav_container {
   font-size: 1.5vh;
   padding: 0.15vh;
   color: rgb(0, 0, 0);
+}
+.footer_box span img {
+  height: 4vh;
 }
 
 /*# sourceMappingURL=main.css.map */
